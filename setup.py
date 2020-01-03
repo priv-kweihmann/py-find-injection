@@ -16,7 +16,11 @@ setup(
         "Topic :: Security",
         "Intended Audience :: Developers",
         "Development Status :: 3 - Alpha",
-        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "License :: OSI Approved :: MIT License",
     ],
     packages=find_packages(exclude=["tests"]),
@@ -25,7 +29,7 @@ setup(
             "py-find-injection = py_find_injection:main",
         ]
     },
-    tests_require=["nose==1.3.0", "mock==1.0.1"],
+    tests_require=["nose", "mock"],
     test_suite="nose.collector",
     long_description="""py_find_injection
 
